@@ -1,0 +1,16 @@
+# Streamlit 主应用
+streamlit>=1.36.0
+
+# 项目一依赖
+plotly>=5.18.0
+pandas>=2.0.0
+numpy>=1.24.0,<2.0
+Pillow>=10.0.0
+fastapi>=0.110.0
+uvicorn>=0.29.0
+sqlalchemy>=2.0.0
+
+# 项目二依赖
+sentence-transformers>=2.5.0
+umap-learn>=0.5.5
+scikit-learn>=1.3.0
