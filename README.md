@@ -14,7 +14,7 @@
 | --- | --- | --- |
 | 📝 OCR 置信度分层 | 项目一 | 三模型对比 + 置信度分析 + 候选池导出 |
 | 🎯 答案聚类与定标集 | 项目二 | UMAP 点云 + 聚类对比 + 定标集浏览 |
-| 📊 评分模型（开发中） | 项目三 | 待启动 |
+| 📊 OCR 复核优先级 | 项目三 | 待启动 |
 
 ## 相关项目
 
@@ -146,7 +146,7 @@ MIT
 | --- | --- | --- |
 | 📝 项目一 | OCR 置信度分层 | [ocr_calibration_data](https://github.com/Qtea653037148/ocr_calibration_data) |
 | 🎯 项目二 | 答案聚类与定标集 | [answer_clustering_calibration_sampler](https://github.com/Qtea653037148/answer_clustering_calibration_sampler) |
-| 📊 项目三 | 评分模型与人机一致率 | [ai_grading_agreement](https://github.com/Qtea653037148/ai_grading_agreement) |
+| 📊 项目三 | OCR 复核优先级 | [ocr_review_prioritizer](https://github.com/Qtea653037148/ocr_review_prioritizer) |
 | 🏠 统一入口 | 本项目 | [unified_app](https://github.com/Qtea653037148/unified_app) |
 
 ## 页面结构
@@ -154,4 +154,4 @@ MIT
 - **🏠 项目总览**：三项目卡片 + 数据流 + 关键指标
 - **📝 OCR 置信度分层**：三模型对比 + 置信度分析
 - **🎯 答案聚类与定标集**：UMAP 点云 + 聚类对比 + 定标集
-- **📊 评分模型与人机一致率**：特征重要性 + 主动学习 + Top-K 召回
+- **📊 OCR 复核优先级**：特征重要性 + 主动学习 + Top-K 召回

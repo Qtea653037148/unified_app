@@ -1,18 +1,17 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-.venv/
-venv/
-env/
-*.log
-.pytest_cache/
 
 # IDE
-.idea/
-.vscode/
-*.swp
-
 # OS
+# Python
+*.egg-info/
+*.log
+*.py[cod]
+*.swp
 .DS_Store
+.idea/
+.pytest_cache/
+.venv/
+.vscode/
 Thumbs.db
+__pycache__/
+env/
+venv/

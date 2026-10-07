@@ -5,7 +5,7 @@
 包含：
   - 项目一：OCR 置信度分层
   - 项目二：答案聚类与定标集筛选
-  - 项目三：（开发中）评分模型与人机一致率
+  - 项目三：OCR 复核优先级
 
 启动：
     cd ~/py_obj/unified_app
@@ -25,6 +25,12 @@ st.set_page_config(
 # ==================== 多页面导航 ====================
 pg = st.navigation([
     st.Page(
+        "pages/00_home.py",
+        title="🏠 项目总览",
+        icon="🏠",
+        default=True,
+    ),
+    st.Page(
         "pages/01_ocr_calibration.py",
         title="📝 OCR 置信度分层",
         icon="📝",
@@ -36,20 +42,24 @@ pg = st.navigation([
     ),
     st.Page(
         "pages/03_grading_model.py",
-        title="📊 评分模型（开发中）",
+        title="📊 OCR 复核优先级",
         icon="📊",
     ),
 ])
 
 # ==================== 侧边栏 ====================
 with st.sidebar:
-    st.markdown("### 🔗 相关链接")
-    st.markdown(
-        "- [GitHub · 项目一](https://github.com/Qtea653037148/ocr_calibration_data)\n"
-        "- [GitHub · 项目二](https://github.com/Qtea653037148/answer_clustering_calibration_sampler)\n"
-    )
+    st.markdown("### 🔗 GitHub 仓库")
+    st.markdown("- [📝 项目一：OCR 分层](https://github.com/Qtea653037148/ocr_calibration_data)")
+    st.markdown("- [🎯 项目二：聚类定标](https://github.com/Qtea653037148/answer_clustering_calibration_sampler)")
+    st.markdown("- [📊 项目三：复核优先级](https://github.com/Qtea653037148/ocr_review_prioritizer)")
+    st.markdown("- [🏠 unified_app（本仓库）](https://github.com/Qtea653037148/unified_app)")
     st.markdown("---")
-    st.caption("Streamlit 多页面应用 | 统一入口")
+    st.markdown("### 🌐 在线演示")
+    st.markdown("[unified_app 入口](https://unbuckled-poking-treadmill.ngrok-free.dev)")
+    st.markdown("---")
+    st.caption("Streamlit 多页面应用 · 统一入口")
+
 
 # ==================== 运行选中页面 ====================
 pg.run()
