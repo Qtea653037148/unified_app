@@ -5,7 +5,7 @@
 包含：
   - 项目一：OCR 置信度分层
   - 项目二：答案聚类与定标集筛选
-  - 项目三：OCR 复核优先级
+  - 项目三：人工复核筛选
 
 启动：
     cd ~/py_obj/unified_app
@@ -42,7 +42,7 @@ pg = st.navigation([
     ),
     st.Page(
         "pages/03_grading_model.py",
-        title="📊 OCR 复核优先级",
+        title="📊 人工复核筛选",
         icon="📊",
     ),
 ])

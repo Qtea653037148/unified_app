@@ -22,7 +22,7 @@ for _mod in list(sys.modules.keys()):
 
 # -*- coding: utf-8 -*-
 """
-项目三：OCR 复核优先级 — Streamlit 面板
+项目三：人工复核筛选 — Streamlit 面板
 
 运行：
     streamlit run scripts/app.py --server.port 8503
@@ -72,7 +72,7 @@ df_train, df_test, full_metrics, simple_metrics, feat_imp, al_multiseed = load_d
 
 st.sidebar.title("📊 项目三")
 st.sidebar.markdown("""
-**评分模型 + 人机一致率**
+**人工复核筛选**
 - 输入：项目一的 9,715 条 OCR 结果
 - 任务：预测"是否需要人工复核"
 - 模型：HistGradientBoosting（3 特征）
@@ -85,7 +85,7 @@ st.sidebar.markdown("""
 - [统一入口](https://github.com/Qtea653037148/unified_app)
 """)
 
-st.title("📊 OCR 复核优先级")
+st.title("📊 人工复核筛选")
 
 tab1, tab2, tab3, tab4 = st.tabs([
     "🎯 模型概览", "📈 评估指标", "🔍 特征重要性", "🔁 主动学习",
